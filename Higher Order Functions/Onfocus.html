@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnFocus</title>
+</head>
+<body>
+    <input type="text" id="name" onfocus="onFocus(this)"/>
+    <script>
+ function onFocus(x){
+ x.style.background = "yellow"
+ x.value = x.value.toUpperCase()
+ }
+    </script>
+</body>
+</html>

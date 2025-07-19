@@ -1,3 +1,6 @@
 Git Commands
 
-Git init -> Command to initialize an empty git repository
+git init -> Command to initialize an empty git repository
+git status -> To check the status of the files untracked or staging area
+git add . -> Adds all files from untracked state to the staging area
+git add <filename> -> Adds only specific file from untracked state to staging area

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      .content {
+        background-color: red;
+      }
+      .textColor {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">Box</div>
+    <p class="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor vero
+      provident, nihil et aliquid odio, natus ullam autem minus ducimus
+      recusandae veritatis facere quisquam ratione unde dolores beatae ab nisi.
+    </p>
+    <script>
+      let boxValue = document.querySelector("#box");
+      console.log(boxValue.getAttribute("id"));
+      boxValue.setAttribute("id", "blueBox");
+      boxValue.remove(); // Removes the Node from the DOM tree
+      let content = document.querySelector(".content");
+      let count = 10;
+      if (count === 10) {
+        content.classList.add("textColor");
+      }
+      if (count === 20) {
+        content.classList.remove("textColor")
+      }
+    </script>
+  </body>
+</html>

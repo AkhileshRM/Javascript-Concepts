@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+</head>
+<body>
+  <form id="form">
+        <input type="text" id="box1" data-uppercase>Box1</input>
+        <input type="text" id="box2" data-uppercase>Box2</input>
+        <input type="text" id="box3">Box3</input>
+    </form>
+    <script>
+        const formContainer = document.querySelector("#form")
+       formContainer.addEventListener("keyup", (e) => {
+        console.log(e)
+        if(e.target.dataset.uppercase!= undefined){
+          e.target.value=e.target.value.toUpperCase()
+        }
+       })
+    </script>
+</body>
+</html>

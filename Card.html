@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .profile{
+            width:50%;
+            max-width:1200px;
+            background-color: white;
+            border:1px solid black;
+        }
+
+        th, td{
+            border: 1px solid black;
+        }
+        td{
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+    <table class="profile">
+        <tr>
+            <th>Name</th>
+            <th>EmployeeID</th>
+            <th>City</th>
+        </tr>
+    </table>
+    <script>
+
+
+let value = [
+    {
+        "id": 1,
+        "name": "Akhilesh",
+        "empid": "61074322",
+        "city": "Bangalore"
+    },
+    {
+        "id": 2,
+        "name": "Hemanth",
+        "empid": "7799768",
+        "city": "Tirupathi"
+    },
+    {
+        "id": 3,
+        "name": "Nithin",
+        "empid": "8866899",
+        "city": "Bangalore"
+    },
+    {
+        "id": 4,
+        "name": "Sanketh",
+        "empid": "785799",
+        "city": "Mangalore"
+    },
+    {
+        "id": 5,
+        "name": "Amol",
+        "empid": "6579078",
+        "city": "Mumbai"
+    }
+]
+
+console.log(value.length)
+let profile = document.querySelector(".profile")
+let division = document.createDocumentFragment()
+    for(let i=0; i<value.length; i++){
+    let tableRow = document.createElement("tr")
+    let Names=document.createElement("td")
+    Names.textContent = value[i].name
+    let employeeIDs=document.createElement("td")
+    employeeIDs.textContent = value[i].empid
+    let Citys=document.createElement("td")
+    Citys.textContent = value[i].city
+    tableRow.append(Names, employeeIDs, Citys)
+    division.appendChild(tableRow)
+}
+// console.log(division.textContent)
+profile.append(division)
+</script>
+</body>
+</html>

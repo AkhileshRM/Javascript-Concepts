@@ -21,3 +21,11 @@ Advanced Commands
 git remote add origin https://github.com/AkhileshRM/Javascript-Concepts.git ->
 To include your new project to Github repository
 git remote -v -> Will show all the URLs attached to this folder.
+
+Note
+
+Head is a pointer for the branch
+
+git branch <branchname> -> To create new branch
+git checkout <branchname> -> Head points to feature branch
+git merge <branchname> -> To merge feature branch to main branch

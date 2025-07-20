@@ -56,5 +56,8 @@ Ultra Advanced Commands
 git rebase -i  ac9269b449e16f6840c49706de291936e7017fce Squashing commits or combining multiple commits into 1 commit.
 -i stands for interactive envrionment
 
+Merge Conflicts
+The merge conflict is really useful to resolve
+
 Resolving merge conflicts
 

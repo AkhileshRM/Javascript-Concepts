@@ -29,4 +29,12 @@ git merge <branchname> -> To merge feature branch to main branch
 Note
 
 Head is a pointer for the branch
+Steps to merge master into main
+1. git fetch --all
+2. git checkout main
+3. git merge master --allow-unrelated-histories -> This tells Git to merge the two branches even though they do not share a common ancestor.
+4. git add .
+5. git commit
+6. git push origin main
+main will now contain all code from both main and master
 

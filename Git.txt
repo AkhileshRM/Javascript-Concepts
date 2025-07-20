@@ -39,7 +39,7 @@ git clone https://github.com/AkhileshRM/commclassroomOP.git -> This will clone t
 git remote add upstream https://github.com/AkhileshRM/commclassroomOP.git -> origin means yours 
 upstream means from where the project has been forked.
 
-Note
+Notes
 
 Head is a pointer for the branch
 Steps to merge master into main
@@ -57,7 +57,5 @@ git rebase -i  ac9269b449e16f6840c49706de291936e7017fce Squashing commits or com
 -i stands for interactive envrionment
 
 Merge Conflicts
-The merge conflict is really useful to resolve
-
-Resolving merge conflicts
+To create a conflict create 2 new branches and commit on the same file then resolve it.
 

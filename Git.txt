@@ -27,6 +27,11 @@ git checkout <branchname> -> Head points to feature branch
 git merge <branchname> -> To merge feature branch to main branch
 git branch -d <branchname> -> To delete the branch locally using git command(make sure code is merged to main branch)
 
+Push and Pull Requests Commands
+
+git push origin <featurebranch> -> After commit use this to raise a Pull Request(PR).
+git pull origin main -> Add this command to get the latest code from main
+
 Note
 
 Head is a pointer for the branch

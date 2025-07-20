@@ -31,6 +31,7 @@ Push and Pull Requests Commands
 
 git push origin <featurebranch> -> After commit use this to raise a Pull Request(PR).
 git pull origin main -> Add this command to get the latest code from main
+git pull upstream main -> Suppose project is forked then to get code from main project's main branch use this command.
 
 Cloning repository Commands
 

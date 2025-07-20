@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listener</title>
+  </head>
+  <body>
+    <button id="btn">Click me</button>
+    <script>
+          let newBtn = document.querySelector("#btn")
+
+        //   newBtn.addEventListener("click", () => {
+        //   console.log("Button 1 clicked")
+        //   })
+
+        //  newBtn.addEventListener("click", () => {
+        //   console.log("Button 2 clicked")
+        //   })
+
+        //  newBtn.addEventListener("click", () => {
+        //   console.log("Button 3 clicked")
+        //   })
+
+        //  Both functions pointing to same memory so button 1 clicked will print
+
+        //  newBtn.removeEventListener("click", () => {
+        //   console.log("Button 1 clicked")
+        //   })
+
+          // To solve the above issue use callback method with variable handler1
+
+          let handler1 =  () => {
+            console.log("Handler1 clicked")
+          }
+       
+          newBtn.addEventListener("click", handler1)
+          
+          let handler2 =  newBtn.addEventListener("click", () => {
+          console.log("Button 2 clicked")
+          })
+
+
+          let handler3 =  newBtn.addEventListener("click", () => {
+          console.log("Button 3 clicked")
+          })
+
+          newBtn.removeEventListener("click", handler1)
+
+    </script>
+  </body>
+</html>

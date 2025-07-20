@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling and Event Capturing</title>
+    <style>
+        .grandparent{
+            position: relative;
+            height:200px;
+            width:50%;
+            border:1px solid black
+        }
+        .parent{
+       
+            position: absolute;
+            border:1px solid black
+        }
+        .child{
+      
+            position: absolute;
+            border:1px solid black
+        }
+    </style>
+</head>
+<body>
+    <div class="grand-parent">grand-parent
+        <div class="parent">parent
+            <div class="child">child
+            </div>
+        </div>
+    </div>
+    <script>
+//Event Bubbling phase is 2nd phase where propogation of event is done from child to parent
+//Event Capturing is 1st phase where propogation of event is done from parent to child
+//However its upto developers to decide whether they need to use bubbling or propogation
+//The main use of this is eventListners are heavy or bulky and need to be managed properly
+
+        let grandparent = document.querySelector(".grand-parent")
+        let parent = document.querySelector(".parent")
+        let child = document.querySelector(".child")
+
+        //By default event Listners will follow event bubbling concept
+
+//         grandparent.addEventListener("click", () => {
+// console.log("Grand parent clicked")
+//         })
+
+//         parent.addEventListener("click", () => {
+//          console.log("Parent Clicked")   
+//         })
+
+//         child.addEventListener("click", () => {
+// console.log("Child clicked")
+//         })
+
+        //By using a boolean value true or false denotes for Data capture concept true or false we can set
+        //Execution happens line by line
+
+//         grandparent.addEventListener("click", () => {
+// console.log("Grand parent clicked")
+//         },true)
+
+//         parent.addEventListener("click", () => {
+//          console.log("Parent Clicked")   
+//         }, true)
+
+//         child.addEventListener("click", () => {
+// console.log("Child clicked")
+//         }, false)
+
+        //We can stop the event propogation by using stopPropogation method.
+
+        grandparent.addEventListener("click", (event) => {
+console.log("Grand parent clicked")
+        },false)
+
+        parent.addEventListener("click", (event) => {
+         console.log("Parent Clicked")   
+        }, true)
+
+        child.addEventListener("click", (event) => {
+console.log("Child clicked")
+event.stopPropagation()
+        }, true)
+
+    </script>
+</body>
+</html>

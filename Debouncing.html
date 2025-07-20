@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debouncing</title>
+  </head>
+  <body>
+    <input type="text" onkeyup="betterFunction()" />
+    <script>
+      let counter = 1;
+      const getData = () => {
+        console.log("Fetching Data....", counter++);
+      };
+
+      const debouncing = (fn, delay) => {
+        let timerId
+        return () => {
+          clearTimeout(timerId);
+          timerId = setTimeout(() => {
+            let context = this, args   //For lexical scope
+            fn.apply(context, args)           
+          }, delay);
+        };
+      };
+
+      const betterFunction = debouncing(getData, 1000)
+    </script>
+  </body>
+</html>

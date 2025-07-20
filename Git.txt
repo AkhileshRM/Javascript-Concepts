@@ -1,0 +1,31 @@
+Git Commands
+
+Basic Commands
+
+git init -> Command to initialize an empty git repository.
+git status -> To check the status of the files untracked or staging area.
+git add . -> Adds all files from untracked state to the staging area.
+git add <filename> -> Adds only specific file from untracked state to staging area.
+git commit -m "Some Message" -> Commits the file from staging area.
+
+Intermediate commands 
+
+git log -> Logs all the committed data
+git restore --stage <filename> -> Moves the file from staging area to untracked state.
+git reset <commitID> -> will move the changes above commit ID to untracked state.
+git stash -> Will remove the changes done in the file from untracked state to stash area
+git stash pop -> Will bring back the changes done from stash area to untracked state.
+
+Advanced Commands
+
+git remote add origin https://github.com/AkhileshRM/Javascript-Concepts.git ->
+To include your new project to Github repository
+git remote -v -> Will show all the URLs attached to this folder.
+
+Note
+
+Head is a pointer for the branch
+
+git branch <branchname> -> To create new branch
+git checkout <branchname> -> Head points to feature branch
+git merge <branchname> -> To merge feature branch to main branch

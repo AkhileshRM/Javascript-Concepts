@@ -25,6 +25,7 @@ git remote rm origin -> This will remove the origin from the git repository.(To 
 git branch <branchname> -> To create new branch
 git checkout <branchname> -> Head points to feature branch
 git merge <branchname> -> To merge feature branch to main branch
+git branch -d <branchname> -> To delete the branch locally using git command(make sure code is merged to main branch)
 
 Note
 
@@ -37,4 +38,6 @@ Steps to merge master into main
 5. git commit
 6. git push origin main
 main will now contain all code from both main and master
+
+
 

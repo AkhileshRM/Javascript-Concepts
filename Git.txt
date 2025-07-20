@@ -7,3 +7,11 @@ git status -> To check the status of the files untracked or staging area.
 git add . -> Adds all files from untracked state to the staging area.
 git add <filename> -> Adds only specific file from untracked state to staging area.
 git commit -m "Some Message" -> Commits the file from staging area.
+
+Intermediate commands 
+
+git log -> Logs all the committed data
+git restore --stage <filename> -> Moves the file from staging area to untracked state.
+git reset <commitID> -> will move the changes above commit ID to untracked state.
+git stash -> Will remove the changes done in the file from untracked state to stash area
+git stash pop -> Will bring back the changes done from stash area to untracked state.

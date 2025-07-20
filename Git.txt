@@ -19,13 +19,14 @@ git stash pop -> Will bring back the changes done from stash area to untracked s
 Advanced Commands
 
 git remote add origin https://github.com/AkhileshRM/Javascript-Concepts.git ->
-To include your new project to Github repository
+To include your new project to Github repository.
 git remote -v -> Will show all the URLs attached to this folder.
+git remote rm origin -> This will remove the origin from the git repository.(To add use the previous add command)
+git branch <branchname> -> To create new branch
+git checkout <branchname> -> Head points to feature branch
+git merge <branchname> -> To merge feature branch to main branch
 
 Note
 
 Head is a pointer for the branch
 
-git branch <branchname> -> To create new branch
-git checkout <branchname> -> Head points to feature branch
-git merge <branchname> -> To merge feature branch to main branch

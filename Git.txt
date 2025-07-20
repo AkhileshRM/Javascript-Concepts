@@ -31,6 +31,7 @@ Push and Pull Requests Commands
 
 git push origin <featurebranch> -> After commit use this to raise a Pull Request(PR).
 git pull origin main -> Add this command to get the latest code from main
+git pull upstream main -> Suppose project is forked then to get code from main project's main branch use this command.
 
 Cloning repository Commands
 
@@ -50,5 +51,9 @@ Steps to merge master into main
 6. git push origin main
 main will now contain all code from both main and master
 
+Ultra Advanced Commands
+
+git rebase -i  ac9269b449e16f6840c49706de291936e7017fce Squashing commits or combining multiple commits into 1 commit.
+-i stands for interactive envrionment
 
 

@@ -32,6 +32,12 @@ Push and Pull Requests Commands
 git push origin <featurebranch> -> After commit use this to raise a Pull Request(PR).
 git pull origin main -> Add this command to get the latest code from main
 
+Cloning repository Commands
+
+git clone https://github.com/AkhileshRM/commclassroomOP.git -> This will clone the repository
+git remote add upstream https://github.com/AkhileshRM/commclassroomOP.git -> origin means yours upstream means from where the project has been forked.
+ 
+
 Note
 
 Head is a pointer for the branch

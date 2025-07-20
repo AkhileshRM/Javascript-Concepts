@@ -57,6 +57,6 @@ git rebase -i  ac9269b449e16f6840c49706de291936e7017fce Squashing commits or com
 -i stands for interactive envrionment
 
 Merge Conflicts
-
+The merge conflict is really useful to resolve
 
 

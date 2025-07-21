@@ -46,7 +46,7 @@ upstream means from where the project has been forked.
 Notes
 
 Head is a pointer for the branch
-Steps to merge master into main
+Steps to merge master into main(This is a optional step not required)
 1. git fetch --all
 2. git checkout main
 3. git merge master --allow-unrelated-histories -> This tells Git to merge the two branches even though they do not share a common ancestor.

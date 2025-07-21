@@ -8,6 +8,10 @@ git add . -> Adds all files from untracked state to the staging area.
 git add <filename> -> Adds only specific file from untracked state to staging area.
 git commit -m "Some Message" -> Commits the file from staging area.
 
+To merge master into main branch use the command(Follow github for more details)
+
+git branch -M main -> This makes the branch main instead of master.
+
 Intermediate commands 
 
 git log -> Logs all the committed data

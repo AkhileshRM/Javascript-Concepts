@@ -1,4 +1,4 @@
-const cart = ["bmw"]
+const cart = ["Benz"]
 
 createOrder(cart) // createOrder It is an API
 

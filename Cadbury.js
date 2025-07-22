@@ -1,7 +1,7 @@
 
-let value =  "" || 12  // false, ""  is not accepted by || operator
+let value =  "" || 20  // false, ""  is not accepted by || operator
 console.log(value)
 
-let value1 =  "" ?? 12  // false, "" is accepted by ?? operator Coalescing operator
+let value1 =  "" ?? 20  // false, "" is accepted by ?? operator Coalescing operator
 
 console.log(value1)

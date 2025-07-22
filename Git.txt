@@ -63,3 +63,10 @@ git rebase -i  ac9269b449e16f6840c49706de291936e7017fce Squashing commits or com
 Merge Conflicts
 To create a conflict create 2 new branches and commit on the same file then resolve it.
 
+In Github resolving 2 changes are separated by =====
+
+To resolve using VS CODE after pushing the changes take a pull from the main.
+The merge editor will open then select incoming or current as needed.
+Then Click on Merge and commit the code.
+Last step use command git push origin <feature branch>
+Merge Conflict will be automatically resolved in Github.

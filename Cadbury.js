@@ -1,15 +1,15 @@
-const cart = ["Shirt", "Pants", "Shoes"]
+const cart = ["Benz"]
 
 createOrder(cart) // createOrder It is an API
 
 .then((orderId) => {
-    return proceedToPayment(orderId)  // proceedToPayment It is an API
+    return proceedToPayment(benz)  // proceedToPayment It is an API
 })
 .then((summary) => {
-    return showOrderSummary(summary)  //  showOrderSummary( It is an API
+    return showOrderSummary(benz)  //  showOrderSummary( It is an API
 })
 .then((balance) => {
-    return updateBalance(balance)  // updateBalance It is an API
+    return updateBalance(benz)  // updateBalance It is an API
 })
 
-.catch(err => console.log(err.message))
+.catch(err => console.log(err.benz))

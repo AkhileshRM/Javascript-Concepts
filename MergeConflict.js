@@ -10,11 +10,11 @@ Add(1,2,3,4,5,6,7)
 
 //Object
 
-var students2 = {
+var students3 = {
     names:"Akhilesh R Madhyastha",
     age:25,
     gender:"male"
 }
 
-const {...rest} = students2
+const {...rest} = students3
 console.log(rest)

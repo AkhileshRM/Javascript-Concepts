@@ -1,7 +1,15 @@
+const cart = ["Shirt", "Pants", "Shoes"]
 
-let value =  "" || 30  // false, ""  is not accepted by || operator
-console.log(value)
+createOrder(cart) // createOrder It is an API
 
-let value1 =  "" ?? 20  // false, "" is accepted by ?? operator Coalescing operator
+.then((orderId) => {
+    return proceedToPayment(orderId)  // proceedToPayment It is an API
+})
+.then((summary) => {
+    return showOrderSummary(summary)  //  showOrderSummary( It is an API
+})
+.then((balance) => {
+    return updateBalance(balance)  // updateBalance It is an API
+})
 
-console.log(value1)
+.catch(err => console.log(err.message))

@@ -14,3 +14,11 @@ let result1 = arr.some((num, i)=> {
     return num%2===1
 })
 console.log(result1)
+
+
+let array = [2,6,2,1]
+
+let finalResult = array.some((num) => {
+    return num%2===1
+})
+console.log("Final Result...", finalResult)

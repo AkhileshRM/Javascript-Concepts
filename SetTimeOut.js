@@ -25,3 +25,12 @@ setTimeout(() => {
 },1000)
 
 
+let time = setTimeout(() => {
+console.log("Akhilesh")
+setTimeout(() => {
+console.log("R Madhyastha")
+}, 1000)
+}, 10000)
+
+console.log(time)
+

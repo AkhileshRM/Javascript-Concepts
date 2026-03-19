@@ -10,7 +10,6 @@ getNames(names)
 getNames(names[0], names[1], names[2])
 getNames(...names) // Using Spread Operator
 
-
 //Object
 //to override values in object we need to use spread operator
 

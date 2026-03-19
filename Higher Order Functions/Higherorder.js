@@ -132,6 +132,10 @@ const students = [
     {
         names: "Suresh",
         age: 18
+    },
+    {
+        names: "Arjuna",
+        age: 24
     }
 ]
 
@@ -171,3 +175,17 @@ return acc
 }, []).sort()
 
 console.log("Sorted names ", values)
+
+//{"24": 2, "19": 1, "18": 1}
+
+const reducedResult = students.reduce((acc, cur) => {
+if(acc[cur.age]){
+    acc[cur.age] = acc[cur.age] + 1
+}
+else{
+    acc[cur.age] = 1
+}
+return acc
+}, {})
+
+console.log("Reduced Result...........", reducedResult)

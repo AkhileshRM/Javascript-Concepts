@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer</title>
+    <style>
+      .centerdiv {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -100px;
+      }
+
+      .classlist {
+        font-size: 30px;
+      }
+
+      .addnewClass {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Developer</h1>
+    <p class="classlist">This is to check ClassList property</p>
+    <div class="centerbox">Box1</div>
+    <script>
+      let centerbox = document.querySelector("div");
+      console.log(centerbox.getAttribute("class"));
+      centerbox.setAttribute("class", "centerdiv"); // Changing class values from centerbox to centerdiv
+      console.log(centerbox.getAttribute("class"));
+
+      let el = document.createElement("button");
+      el.innerText = "Click me";
+      el.style.backgroundColor = "red";
+      el.style.color = "white";
+
+      centerbox.append(el);
+
+      const paragraph = document.body.appendChild(document.createElement("p")); // body's last child will be paragraph
+
+      paragraph.innerText = "This is a developer paragraph";
+      // You can append more elements to the paragraph later
+      console.log(paragraph);
+
+      let bodyel = document.querySelector("body");
+      console.log("Last child is paragraph", bodyel.lastChild);
+
+      let addingClassList = document.querySelector(".classlist");
+
+      addingClassList.classList.add("addnewClass"); // By Using Set Attribute we can add new class but old class css
+      // will be overwritten but using classList method old class css as well as new class Css will be applied
+
+      setTimeout(() => {
+        bodyel.removeChild(paragraph);
+        // paragraph.parentNode.removeChild(paragraph) Use parentNode if dont know parent
+        console.log("Paragraph has been removed with the help of removeChild");
+      }, 5000);
+    </script>
+  </body>
+</html>

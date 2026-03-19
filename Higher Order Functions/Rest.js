@@ -18,3 +18,13 @@ var students = {
 
 const {...rest} = students
 console.log(rest)
+
+
+let scooters = {
+    name: "Honda",
+    model: "Dio",
+    engine: "BS6"
+}
+
+const {...rests} = scooters
+console.log(rests)

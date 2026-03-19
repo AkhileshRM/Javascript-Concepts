@@ -15,11 +15,58 @@ const users = [
   {firstName: "Legend", lastName:"Hero", age:31},
 ]
 
-const output = users.reduce((acc, curr) => {
-if(curr.age < 30){
-  acc.push(curr.firstName)
+const newUsers = users.reduce((acc, cur) => {
+if(cur.age < 30){
+  acc.push(cur.firstName)
 }
 return acc
 }, [])
 
-console.log(output)
+console.log(newUsers)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const output = users.reduce((acc, curr) => {
+// if(curr.age < 30){
+//   acc.push(curr.firstName)
+// }
+// return acc
+// }, [])
+
+// console.log(output)
+
+
+
+
+
+
+
+
+

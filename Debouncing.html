@@ -18,8 +18,7 @@
         return () => {
           clearTimeout(timerId);
           timerId = setTimeout(() => {
-            let context = this, args   //For lexical scope
-            fn.apply(context, args)           
+            fn()          
           }, delay);
         };
       };

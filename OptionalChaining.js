@@ -31,8 +31,8 @@ let user2 = {
 }
 let user3 = {};
 
-console.log(user1?.())
-console.log(user2.dog?.())  // Functions check
+user1?.()
+user2.dog?.()  // Functions check
 console.log(user3.dog?.())
  
 //             or

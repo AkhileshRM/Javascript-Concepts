@@ -48,3 +48,22 @@ console.log(Math.max.apply(null, numbers))
 
 //Call, Apply and Bind will only work for normal functions and not for Arrow functions.
 // The reason is in Arrow Functions this keyword will refer to Window Object.
+
+let company = {
+    firstName: "LTI",
+    secondName: "Mindtree",
+    displayFullName: function(location, area){
+console.log(this.firstName + " " + this.secondName + " " + location + " " + area)
+}
+}
+
+let newCompany = {
+    firstName: "Micro",
+    secondName: "Soft"
+}
+
+company.displayFullName.call(newCompany, "Bangalore", "GlobalVillage")
+company.displayFullName.apply(newCompany, ["Bengaluru", "Pattanagere"])
+
+let bindCompany = company.displayFullName.bind(newCompany, "Bangalore", "GlobalVillage")
+bindCompany()

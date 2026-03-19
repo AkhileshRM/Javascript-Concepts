@@ -63,3 +63,23 @@ let multiSum = function(a){
 }
 
 let finalResult = multiSum(2)(6)(1)
+
+//...................................Practical Example............................
+
+function add(a){
+    return function(b){
+        return function(c){
+            return a + b + c
+        } 
+    }
+}
+
+console.log("Practical Approach is ", add(1)(2)(3))
+
+// Main use of Currying is reusability
+// You can "lock in" some arguments and reuse the function later.
+
+const add1 = add(10)
+const add2 = add1(5)
+const add3 = add2(7)
+console.log(add3)
